@@ -1,5 +1,5 @@
 # twinleaksflutter
 
-Front end for twin-leaks in fluttr. 
+Front end for twin-leaks in flutter. 
 
 
