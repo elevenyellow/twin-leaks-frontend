@@ -34,6 +34,9 @@ class _ContractComparisonPageState extends State<ContractComparisonPage> {
                 );
               case ConnectionState.done:
                 var objSnapshot = jsonDecode(snapshot.data.toString());
+
+                print(objSnapshot);
+
                 if (objSnapshot["isError"]) {
                   return Container(
                     child: Center(

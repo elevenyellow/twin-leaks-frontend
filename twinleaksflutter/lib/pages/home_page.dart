@@ -5,6 +5,7 @@ import 'package:twinleaksflutter/styles/colors.dart';
 import 'package:twinleaksflutter/utils/backend_utils.dart';
 import 'package:twinleaksflutter/utils/consts.dart';
 import 'package:twinleaksflutter/widgets/top_protocol_row.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -34,38 +35,35 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Twin Leaks",
-          style: Theme.of(context).textTheme.headline1,
+          title: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: SizedBox(
+          height: 50,
+          width: 300,
+          child: SvgPicture.asset("/icons/icon_svg.svg"),
         ),
-        centerTitle: false,
-        leading: IconButton(
-          icon: Icon(Icons.more_horiz),
-          onPressed: () {},
-        ),
-        backgroundColor: Colours.dark_bg_color,
-      ),
+      )
+
+          // Text(
+          //   "Twin Leaks",
+          //   style: Theme.of(context).textTheme.headline2!.copyWith(color: Colours.twin_leaks_purple),
+          // ),
+
+          ),
       body: Container(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.fromLTRB(50, 20, 50, 20),
           child: Column(
             // mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(
-                height: 40,
-              ),
-              Icon(
-                Icons.copy_sharp,
-                color: Colors.white,
-                size: 120,
-              ),
-              SizedBox(
-                height: 40,
+                height: 20,
               ),
               Container(
                 // height: constraints.maxHeight * 0.2,
+                width: MediaQuery.of(context).size.width * 0.7,
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(80, 20, 80, 20),
+                  padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
                   child: Text(
                     "Twin Leaks lets you compare various protocols using their bytecode. It provides you a measure of similarity between two protocols as a percentage.",
                     style: Theme.of(context).textTheme.headline1,
@@ -74,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 80,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -82,9 +80,9 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     // width: constraints.maxWidth * 0.5,
-                    width: MediaQuery.of(context).size.width * 0.5,
+                    width: MediaQuery.of(context).size.width * 0.3,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colours.dark_green),
+                      border: Border.all(color: Colours.twin_leaks_purple),
                       borderRadius: BorderRadius.horizontal(
                         left: Radius.circular(20),
                         right: Radius.circular(20),
@@ -94,14 +92,14 @@ class _HomePageState extends State<HomePage> {
                       onChanged: (String value) {
                         _contractAddress = value;
                       },
-                      style: TextStyle(color: Colors.white),
                       decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: "Search",
-                          hintStyle: TextStyle(color: Colors.white),
+                          hintStyle:
+                              TextStyle(color: Colours.twin_leaks_purple),
                           icon: Icon(
                             Icons.search_sharp,
-                            color: Colors.white,
+                            color: Colours.twin_leaks_purple,
                             size: 36,
                           )),
                     ),
@@ -138,9 +136,9 @@ class _HomePageState extends State<HomePage> {
                 child: OutlinedButton(
                   style: OutlinedButton.styleFrom(
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(12),
                       ),
-                      side: BorderSide(color: Colours.dark_green)),
+                      side: BorderSide(color: Colours.twin_leaks_purple)),
                   onPressed: () {
                     _compareContract();
                   },
@@ -149,9 +147,12 @@ class _HomePageState extends State<HomePage> {
                     style: Theme.of(context)
                         .textTheme
                         .headline1!
-                        .copyWith(color: Colours.dark_green),
+                        .copyWith(color: Colours.twin_leaks_purple),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 120,
               ),
               Container(
                 // height: constraints.maxHeight * 0.2,
@@ -159,10 +160,7 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.fromLTRB(80, 20, 80, 20),
                   child: Text(
                     "Find similar contracts of top DeFi projects",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 18),
+                    style: Theme.of(context).textTheme.headline2,
                     textAlign: TextAlign.left,
                   ),
                 ),

@@ -16,6 +16,7 @@ class TopProtocolRow extends StatelessWidget {
         children: [
           HexagonWidget.flat(
             cornerRadius: 20,
+            elevation: 16,
             width: 120,
             height: 80,
             child: Text(
@@ -23,11 +24,12 @@ class TopProtocolRow extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline1!
-                  .copyWith(color: Colours.dark_bg_gray),
+                  .copyWith(color: Colours.twin_leaks_purple),
             ),
           ),
           HexagonWidget.flat(
             cornerRadius: 20,
+            elevation: 16,
             width: 120,
             height: 80,
             child: Text(
@@ -35,11 +37,12 @@ class TopProtocolRow extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline1!
-                  .copyWith(color: Colours.dark_bg_gray),
+                  .copyWith(color: Colours.twin_leaks_purple),
             ),
           ),
           HexagonWidget.flat(
             cornerRadius: 20,
+            elevation: 16,
             width: 120,
             height: 80,
             child: Text(
@@ -47,11 +50,12 @@ class TopProtocolRow extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline1!
-                  .copyWith(color: Colours.dark_bg_gray),
+                  .copyWith(color: Colours.twin_leaks_purple),
             ),
           ),
           HexagonWidget.flat(
             cornerRadius: 20,
+            elevation: 16,
             width: 120,
             height: 80,
             child: Text(
@@ -59,11 +63,12 @@ class TopProtocolRow extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline1!
-                  .copyWith(color: Colours.dark_bg_gray),
+                  .copyWith(color: Colours.twin_leaks_purple),
             ),
           ),
           HexagonWidget.flat(
             cornerRadius: 20,
+            elevation: 16,
             width: 120,
             height: 80,
             child: Text(
@@ -71,11 +76,12 @@ class TopProtocolRow extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline1!
-                  .copyWith(color: Colours.dark_bg_gray),
+                  .copyWith(color: Colours.twin_leaks_purple),
             ),
           ),
           HexagonWidget.flat(
             cornerRadius: 20,
+            elevation: 16,
             width: 120,
             height: 80,
             child: Text(
@@ -83,7 +89,7 @@ class TopProtocolRow extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline1!
-                  .copyWith(color: Colours.dark_bg_gray),
+                  .copyWith(color: Colours.twin_leaks_purple),
             ),
           )
         ],

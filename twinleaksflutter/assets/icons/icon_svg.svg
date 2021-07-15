@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="376" height="98.552" viewBox="0 0 376 98.552">
+  <g id="Grupo_28" data-name="Grupo 28" transform="translate(-278 -1347.926)">
+    <g id="Grupo_27" data-name="Grupo 27">
+      <text id="TWIN" transform="translate(278 1425)" fill="#6d60f8" font-size="64" font-family="OPTINational-Gothic" letter-spacing="0.02em"><tspan x="0" y="0">TWIN</tspan></text>
+      <text id="LEAKS" transform="translate(493 1425)" fill="#6d60f8" font-size="64" font-family="OPTINational-Gothic" letter-spacing="0.02em"><tspan x="0" y="0">LEAKS</tspan></text>
+      <path id="Trazado_40" data-name="Trazado 40" d="M51.6,0H23.278a9.116,9.116,0,0,0-7.9,4.558L1.221,29.087a9.117,9.117,0,0,0,0,9.117L15.383,62.732a9.116,9.116,0,0,0,7.9,4.558H51.6a9.117,9.117,0,0,0,7.9-4.558L73.658,38.2a9.117,9.117,0,0,0,0-9.117L59.5,4.558A9.117,9.117,0,0,0,51.6,0Z" transform="translate(439.284 1349.344) rotate(30)" fill="none" stroke="#6d60f8" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Trazado_41" data-name="Trazado 41" d="M34.205,0H15.431A6.043,6.043,0,0,0,10.2,3.022L.81,19.281a6.044,6.044,0,0,0,0,6.043L10.2,41.584a6.043,6.043,0,0,0,5.234,3.022H34.205a6.043,6.043,0,0,0,5.234-3.022l9.387-16.259a6.043,6.043,0,0,0,0-6.043L39.439,3.022A6.043,6.043,0,0,0,34.205,0Z" transform="translate(444.543 1365.478) rotate(30)" fill="none" stroke="#6d60f8" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Línea_9" data-name="Línea 9" y2="50" transform="translate(455.5 1372.5)" fill="none" stroke="#6d60f8" stroke-width="2"/>
+      <path id="Trazado_42" data-name="Trazado 42" d="M0,76V0" transform="translate(455.5 1359.5)" fill="none" stroke="#6d60f8" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

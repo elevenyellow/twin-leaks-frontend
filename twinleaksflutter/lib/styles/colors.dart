@@ -9,6 +9,7 @@ class Colours {
   static const Color aave_purple = Color(0xFFB6509E);
   static const Color aave_blue = Color(0xFF2EBAC6);
   static const Color aave_orange = Color(0xFFFF7601);
+  static const Color twin_leaks_purple = Color(0xFF6D60F8);
 
   static const Color bg_color = Color(0xFFF0F4F6); //edited by avyact
   static const Color dark_bg_color = Color(0xFF0F1212); //edited by avyact
@@ -17,7 +18,8 @@ class Colours {
   static const Color material_bg = Color(0xFFFFFFFF);
   static const Color dark_material_bg = Color(0xFF353739);
 
-  static const Color text = Color(0xFF1F2124);
+  // static const Color text = Color(0xFF1F2124);
+  static const Color text = Color(0xFF666666); //edited by avyact
   static const Color dark_text = Color(0xFFACAFB0); //edited by avyact
 
   static const Color text_gray = Color(0xFFACAFB0); //edited by avyact
