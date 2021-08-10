@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexagon/hexagon.dart';
 import 'package:twinleaksflutter/pages/contract_comparison_page.dart';
+import 'package:twinleaksflutter/pages/tree_page.dart';
 import 'package:twinleaksflutter/styles/colors.dart';
 import 'package:twinleaksflutter/utils/backend_utils.dart';
 import 'package:twinleaksflutter/utils/consts.dart';
@@ -23,6 +24,12 @@ class _HomePageState extends State<HomePage> {
     print(selectedChain);
     compareContractFuture = compareContract(
         contractAddress: _contractAddress, chain: selectedChain);
+
+    // Navigator.of(context).push(
+    //   MaterialPageRoute<void>(
+    //     builder: (BuildContext context) => TreeViewPage(),
+    //   ),
+    // );
 
     Navigator.of(context).push(MaterialPageRoute<void>(
       builder: (BuildContext context) => ContractComparisonPage(

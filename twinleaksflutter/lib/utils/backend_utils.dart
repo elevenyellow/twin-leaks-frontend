@@ -11,8 +11,12 @@ Future<dynamic> compareContract(
 
   print(dataToPost);
 
-  // Uri uri = Uri.http("192.168.1.47:8000", "/compareContractToTopDefiProtocols");
-  Uri uri = Uri.http("172.20.10.4:8000", "/compareContractToTopDefiProtocols");
+  Uri uri = Uri.http("192.168.1.37:8000", "/compareContractToTopDefiProtocols");
+
+
+
+
+  // Uri uri = Uri.http("172.20.10.4:8000", "/compareContractToTopDefiProtocols");
 
   final compareContractApiResponse = await http.post(
     uri,

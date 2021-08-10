@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexagon/hexagon.dart';
 import 'package:twinleaksflutter/styles/colors.dart';
+import 'package:twinleaksflutter/widgets/protocol_hexagon.dart';
 
 class TopProtocolRow extends StatelessWidget {
   const TopProtocolRow({
@@ -14,84 +15,24 @@ class TopProtocolRow extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          HexagonWidget.flat(
-            cornerRadius: 20,
-            elevation: 16,
-            width: 120,
-            height: 80,
-            child: Text(
-              "Aave",
-              style: Theme.of(context)
-                  .textTheme
-                  .headline1!
-                  .copyWith(color: Colours.twin_leaks_purple),
-            ),
+          ProtocolHexgaon(
+            name: "UniswapV2",
           ),
-          HexagonWidget.flat(
-            cornerRadius: 20,
-            elevation: 16,
-            width: 120,
-            height: 80,
-            child: Text(
-              "UniswapV2",
-              style: Theme.of(context)
-                  .textTheme
-                  .headline1!
-                  .copyWith(color: Colours.twin_leaks_purple),
-            ),
+          ProtocolHexgaon(
+            name: "Aave",
           ),
-          HexagonWidget.flat(
-            cornerRadius: 20,
-            elevation: 16,
-            width: 120,
-            height: 80,
-            child: Text(
-              "Compound",
-              style: Theme.of(context)
-                  .textTheme
-                  .headline1!
-                  .copyWith(color: Colours.twin_leaks_purple),
-            ),
+          ProtocolHexgaon(
+            name: "Compound",
           ),
-          HexagonWidget.flat(
-            cornerRadius: 20,
-            elevation: 16,
-            width: 120,
-            height: 80,
-            child: Text(
-              "PancakeSwap",
-              style: Theme.of(context)
-                  .textTheme
-                  .headline1!
-                  .copyWith(color: Colours.twin_leaks_purple),
-            ),
+          ProtocolHexgaon(
+            name: "PancakeSwap",
           ),
-          HexagonWidget.flat(
-            cornerRadius: 20,
-            elevation: 16,
-            width: 120,
-            height: 80,
-            child: Text(
-              "DonutSwap",
-              style: Theme.of(context)
-                  .textTheme
-                  .headline1!
-                  .copyWith(color: Colours.twin_leaks_purple),
-            ),
+          ProtocolHexgaon(
+            name: "DonutSwap",
           ),
-          HexagonWidget.flat(
-            cornerRadius: 20,
-            elevation: 16,
-            width: 120,
-            height: 80,
-            child: Text(
-              "SaltSwap",
-              style: Theme.of(context)
-                  .textTheme
-                  .headline1!
-                  .copyWith(color: Colours.twin_leaks_purple),
-            ),
-          )
+          ProtocolHexgaon(
+            name: "SaltSwap",
+          ),
         ],
       ),
     );
