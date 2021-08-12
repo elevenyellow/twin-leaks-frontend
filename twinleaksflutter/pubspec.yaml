@@ -33,6 +33,7 @@ dependencies:
   http: ^0.13.3
   flutter_svg: ^0.22.0
   graphview: ^0.7.0
+  url_launcher: ^6.0.9
 
 dev_dependencies:
   flutter_test:

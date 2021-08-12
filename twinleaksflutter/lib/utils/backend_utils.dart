@@ -11,7 +11,7 @@ Future<dynamic> compareContract(
 
   print(dataToPost);
 
-  Uri uri = Uri.http("192.168.1.37:8000", "/compareContractToTopDefiProtocols");
+  Uri uri = Uri.http("192.168.1.15:8000", "/compareContractToTopDefiProtocols");
 
 
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graphview/GraphView.dart';
 import 'package:twinleaksflutter/styles/colors.dart';
+import 'package:twinleaksflutter/utils/general_utils.dart';
 import 'package:twinleaksflutter/widgets/protocol_hexagon.dart';
 
 class SmallTree extends StatefulWidget {
@@ -54,8 +55,8 @@ class _SmallTreeState extends State<SmallTree> {
                 BuchheimWalkerAlgorithm(builder, TreeEdgeRenderer(builder)),
             paint: Paint()
               ..color = Colours.twin_leaks_purple
-              ..strokeWidth = 2
-              ..style = PaintingStyle.stroke,
+              ..strokeWidth = 1
+              ..style = PaintingStyle.fill,
             builder: (Node node) {
               var a = node.key.value as int;
 
@@ -63,12 +64,17 @@ class _SmallTreeState extends State<SmallTree> {
                 return ProtocolHexgaon(name: widget.mainProtocol["name"]);
               } else {
                 double _similarity = double.parse(widget.similarProtocols[a - 2]
-                        ["dice_similarity_coefficient"]
-                    .toString());
+                            ["dice_similarity_coefficient"]
+                        .toString()) *
+                    100;
 
                 return ProtocolHexgaon(
                   name: widget.similarProtocols[a - 2]["comparisonTo"],
-                  similarity: _similarity.toStringAsFixed(4),
+                  url: getProtocolUrl(
+                      contractAddress: widget.similarProtocols[a - 2]
+                          ["protocol_address"],
+                      chain: widget.similarProtocols[a - 2]["chain"]),
+                  similarity: _similarity.toStringAsFixed(2) + "%",
                 );
               }
             },

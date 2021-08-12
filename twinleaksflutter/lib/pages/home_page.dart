@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
           title: Padding(
         padding: const EdgeInsets.all(20.0),
         child: SizedBox(
-          height: 50,
+          height: 200,
           width: 300,
           child: SvgPicture.asset("/icons/icon_svg.svg"),
         ),
